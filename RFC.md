@@ -147,6 +147,7 @@ class Listing(val id: String, val name: String) {
 class Manga(
     val key: String,
     val title: String,
+    val altTitles: List<String> = emptyList(),
     val artists: List<String> = emptyList(),
     val authors: List<String> = emptyList(),
     val description: String = "",
