@@ -188,6 +188,7 @@ class Chapter(
     val scanlators: List<String> = emptyList(),
     val lockedStatus: ChapterLockState = ChapterLockState.NONE,
     val internalData: String = "",
+    val branch: String? = null,
 )
 
 enum class ChapterLockState(val isLocked: Boolean, val disablePageFetch: Boolean) {
