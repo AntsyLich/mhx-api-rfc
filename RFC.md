@@ -186,9 +186,7 @@ enum class UpdateStrategy {
 enum class ReadingDirection {
     LeftToRight,
     RightToLeft,
-    Vertical,
     LongStrip,
-    LongStripWithGaps,
 }
 ```
 ## Chapter 
