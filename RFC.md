@@ -161,7 +161,6 @@ class Manga(
     val rating: Float = -1f, 
     val updateStrategy: UpdateStrategy = UpdateStrategy.AlwaysUpdate,
     val initialized: Boolean = false,
-    val availabilityStatus: AvailabilityStatus = AvailabilityStatus.Available
     val chapters: List<Chapter>? = null,
     val related: List<Manga> = emptyList(),
     val suggested: List<Manga> = emptyList(),
@@ -190,12 +189,6 @@ enum class ReadingDirection {
     Vertical,
     LongStrip,
     LongStripWithGaps,
-}
-
-enum class AvailabilityStatus {
-    Available,
-    Unlocked,
-    Locked,
 }
 ```
 ## Chapter 
