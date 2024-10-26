@@ -163,7 +163,7 @@ class Manga(
     val initialized: Boolean = false,
     val chapters: List<Chapter>? = null,
     val related: List<Manga> = emptyList(),
-    val suggested: List<Manga> = emptyList(),
+    val recommended: List<Manga> = emptyList(),
     val trackerLinks: List<String> = emptyList(),
     val internalData: String = "",
 )
