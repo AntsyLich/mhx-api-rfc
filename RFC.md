@@ -163,11 +163,14 @@ class Manga(
     val genres: List<String> = emptyList(),
     val status: MangaStatus = MangaStatus.Unknown,
     val cover: String? = null,
+    val readingDirection: ReadingDirection? = null,
     val rating: Float = -1f, 
     val updateStrategy: UpdateStrategy = UpdateStrategy.AlwaysUpdate,
     val initialized: Boolean = false,
     val chapters: List<Chapter>? = null,
     val related: List<Manga> = emptyList(),
+    val recommended: List<Manga> = emptyList(),
+    val trackerLinks: List<String> = emptyList(),
     val internalData: String = "",
 )
 
@@ -184,6 +187,12 @@ enum class MangaStatus {
 enum class UpdateStrategy {
     AlwaysUpdate,
     OnlyFetchOnce,
+}
+
+enum class ReadingDirection {
+    LeftToRight,
+    RightToLeft,
+    LongStrip,
 }
 ```
 ## Chapter 
